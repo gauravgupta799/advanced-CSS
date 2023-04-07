@@ -34,12 +34,11 @@ h2{
     transition-duration: 2s;
     transition-delay:1s;
     *//*transition: background-color 3s ease-in-out 1s, color 2s ease 3s, border-radius 4s ease-out 5s;
-    -webkit-transition:all;
-    -moz-transition:all;
-    -ms-transition:all;
-    -o-transition:all;
-    */
-    transition:all 3s ease-in 1s;
+    -webkit-transition:all 3s ease-in 1s;
+    -moz-transition:all 3s ease-in 1s;
+    -ms-transition:all 3s ease-in 1s;
+    -o-transition:all 3s ease-in 1s;
+    */transition:all 3s ease-in 1s;
 }
 #btn-hover:hover{
     background-color:red;
@@ -97,3 +96,77 @@ h2{
     transition-timing-function: ease-in-out;
 }
 
+.container2{
+    padding:20px;
+}
+.container2  div{
+    height:50px;
+    width:150px;
+    border:1px solid white;
+    text-align: center;
+    margin:20px 0px;
+    line-height: 50px;
+    font-size:1.4rem;
+    background-color: darkcyan;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+    cursor:pointer;
+}
+.background:hover {
+	background-color: green
+}
+
+.color:hover {
+	color: red;
+}
+
+.font-size:hover {
+	font-size: 32px;
+}
+
+.height:hover {
+	height: 120px;
+}
+
+.width:hover {
+	width: 340px;
+}
+
+.letter-spacing:hover {
+	letter-spacing: 5px;
+}
+
+.line-height:hover {
+	line-height: 70px;
+}
+
+.margin-bottom:hover {
+	margin-bottom: 50px;
+}
+
+.margin-top:hover {
+	margin-top: 50px;
+}
+
+.opacity:hover {
+	opacity: .3;
+}
+
+.padding:hover {
+	padding: 20px;
+}
+
+.border-color, .border-width {
+	border: 6px solid green;
+}
+
+.border-color:hover {
+	border-color: red;
+}
+
+.border-width:hover {
+	border-width: 12px;
+}
