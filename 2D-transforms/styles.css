@@ -47,13 +47,14 @@ img{
     -ms-transition:transform 2s ease-in-out;
     -o-transition:transform 2s ease-in-out;
 }
-img:hover{
+#car-image:hover{
     transform:translate(200px, 200px);
     -webkit-transform:translate(200px, 200px);
     -moz-transform:translate(200px, 200px);
     -ms-transform:translate(200px, 200px);
     -o-transform:translate(200px, 200px);
 }
+
 #eye-image:hover{
     /*transform:scale(1.5);
     -webkit-transform:rotate(1turn);
@@ -68,4 +69,14 @@ img:hover{
     -moz-transform:r;
     -ms-transform:r;
     -o-transform:r;
+}
+
+#sofa-image:hover{
+    /*transform:skewX(20grad);
+    -webkit-transform:skew(20deg, 30grad);
+    -moz-transform:skew(20deg, 30grad);
+    -ms-transform:skew(20deg, 30grad);
+    -o-transform:skew(20deg, 30grad);*/
+    /*transform:skewY(30grad);*/
+    transform:skew(20deg, -30grad);
 }
