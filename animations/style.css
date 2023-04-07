@@ -33,3 +33,48 @@ h2{
     background-color:red;
     cursor:pointer;
 }
+.move{
+    padding:10px 25px;
+    border:none;
+    font-size:1.3rem;
+    border-radius: 5px;
+    color:white;
+    display: flex;
+    margin:20px;
+    transition:translate();
+    -webkit-transition:translate();
+    -moz-transition:translate();
+    -ms-transition:translate();
+    -o-transition:translate();
+    transition-duration: 3s;
+    transition-delay:2s;
+}
+.move:hover{
+    transform:translate(950px,0);
+    -webkit-transform:translate(950px,0);
+    -moz-transform:translate(950px,0);
+    -ms-transform:translate(950px,0);
+    -o-transform:translate(950px,0);
+    cursor:pointer;
+}
+#ease{
+    background-color: green;
+    transition-timing-function: ease;
+}
+#linear{
+    background-color: rgb(0, 23, 128);
+    transition-timing-function:linear ;
+}
+#ease-in{
+    background-color: rgb(128, 47, 0);
+    transition-timing-function: ease-in;
+}
+#ease-out{
+    background-color: rgb(128, 0, 107);
+    transition-timing-function: ease-out;
+}
+#ease-in-out{
+    background-color: rgb(0, 21, 0);
+    transition-timing-function: ease-in-out;
+}
+
