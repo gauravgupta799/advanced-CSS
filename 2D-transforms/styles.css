@@ -55,9 +55,17 @@ img:hover{
     -o-transform:translate(200px, 200px);
 }
 #eye-image:hover{
-    transform:scale(1.5);
-    -webkit-transform:scale(1.5);
-    -moz-transform:scale(1.5);
-    -ms-transform:scale(1.5);
-    -o-transform:scale(1.5);
+    /*transform:scale(1.5);
+    -webkit-transform:rotate(1turn);
+    -moz-transform:rotate(1turn);
+    -ms-transform:rotate(1turn);
+    -o-transform:rotate(1turn);*/
+    /*transform:rotate(80deg);*/
+    /*transform:rotate(-80deg);*/
+    /*transform:rotate(1turn);*/
+    transform:rotate(100grad);
+    -webkit-transform:r;
+    -moz-transform:r;
+    -ms-transform:r;
+    -o-transform:r;
 }
