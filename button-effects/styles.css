@@ -186,3 +186,34 @@ h2{
     letter-spacing: 2px;
     border:10px solid red;
 }
+
+/* Button 5 */
+.btn-5::before{
+    content:"YEAH!";
+    left: 0;
+    top: 0;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transform:translateY(-100%);
+    transition:all 0.7s;
+    background-color:#df09df;
+    -webkit-transform:translateY(-100%);
+    -moz-transform:translateY(-100%);
+    -ms-transform:translateY(-100%);
+    -o-transform:translateY(-100%);
+    -webkit-transition:all 0.7s;
+    -moz-transition:all 0.7s;
+    -ms-transition:all 0.7s;
+    -o-transition:all 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-5:hover::before{
+    transform:translateY(0);
+    -webkit-transform:translateY(0);
+    -moz-transform:translateY(0);
+    -ms-transform:translateY(0);
+    -o-transform:translateY(0);
+}
