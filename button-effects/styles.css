@@ -239,3 +239,44 @@ h2{
 .btn-6:hover::before{
     transform:translateX(100%) rotate(45deg) ;
 }
+
+/* Button-7 */
+.btn-7{
+    background-color:#000;
+    color:transparent;
+}
+.btn-7::before{
+    content:"Hover Me";
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color:#fff200;
+    color:#000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.5s;
+}
+.btn-7:hover::before{
+    transform:translate(100%,-100%);
+}
+.btn-7::after{
+    content:"Hover Me";
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color:#fff200;
+    color:#000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.5s;
+    transform:translate(-100%,100%);
+}
+.btn-7:hover::after{
+    transform:translate(0,0);
+}
