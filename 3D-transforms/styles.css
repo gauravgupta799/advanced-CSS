@@ -32,9 +32,12 @@ h1{
     -o-transition:transform 1s;
 }
 .container img:hover{
-    transform:translateZ(200px);
-    -webkit-transform:translateZ(200px);
-    -moz-transform:translateZ(200px);
-    -ms-transform:translateZ(200px);
-    -o-transform:translateZ(200px);
+    /*transform:translateZ(200px);
+    -webkit-transform:rotateX(60deg);
+    -moz-transform:rotateX(60deg);
+    -ms-transform:rotateX(60deg);
+    -o-transform:rotateX(60deg);*/
+    /*transform:rotateZ(60deg);*/
+    /*transform:rotateX(60deg);*/
+    transform:rotateY(65deg);
 }
