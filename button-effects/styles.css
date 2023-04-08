@@ -24,7 +24,7 @@ h2{
     background-color: transparent;
     font-size: 1.5rem;
     position:relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     cursor: pointer;
     color:white;
 }
@@ -449,4 +449,41 @@ h2{
 .btn-12:hover{
     color:#111;
     transition-delay: 0.4s;
+}
+
+/* Button-13 */
+.btn-13{
+    border:none;
+}
+.btn-13::before,
+.btn-13::after{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    mix-blend-mode:difference;
+    transition:all 0.2s;
+}
+.btn-13::before{
+    top: -3px;
+    left: -3px;
+    background-color: #20caff;
+    transform-origin:top;
+}
+.btn-13::after{
+    top: 3px;
+    left: 3px;
+    background-color: #ff7675;
+    transform-origin:bottom;
+}
+.btn-13:hover::before{
+    top: -6px;
+    left: 0;
+    transform:perspective(1000px) rotateX(75deg);
+}
+.btn-13:hover::after{
+    top: 6px;
+    left: 0;
+    transform:perspective(1000px) rotateX(-75deg);
 }
