@@ -169,3 +169,20 @@ h2{
     -ms-transform:rotateY(0deg);
     -o-transform:rotateY(0deg);
 }
+
+/* Button 4 */
+.btn-4{
+    padding:1em 1.9em;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+.btn-4:hover{
+    font-weight: 900;
+    letter-spacing: 2px;
+    border:10px solid red;
+}
