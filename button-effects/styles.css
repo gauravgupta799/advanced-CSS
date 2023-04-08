@@ -6,9 +6,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 100vh;
     gap:1.5rem;
     flex-wrap:wrap;
+    flex-direction:column;
 }
 h2{
     text-align:center;
@@ -27,6 +28,7 @@ h2{
     cursor: pointer;
     color:white;
 }
+/* Button 1 Origin from bottom-left and right*/
 .btn-1::before{
     content:"";
     position:absolute;
@@ -83,3 +85,31 @@ h2{
     -o-transform:rotate(0deg);
 }
 
+/* Button 2 swipe effect */
+.btn-2::before{
+    content:"";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#235464;
+    position:absolute;
+    z-index:-1;
+    transform:translateX(-100%);
+    transition:all 1s;
+    -webkit-transform:translateX(-100%);
+    -moz-transform:translateX(-100%);
+    -ms-transform:translateX(-100%);
+    -o-transform:translateX(-100%);
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+.btn-2:hover::before{
+    transform:translateX(0);
+    -webkit-transform:translateX(0);
+    -moz-transform:translateX(0);
+    -ms-transform:translateX(0);
+    -o-transform:translateX(0);
+}
