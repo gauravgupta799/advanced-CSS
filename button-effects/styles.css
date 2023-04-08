@@ -325,3 +325,30 @@ h2{
 .btn-9:hover::before{
     height: 200%;
 }
+
+/* Button-10 */
+.btn-10::before, .btn-10::after{
+    content: "Hover Me";
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform:rotateX(270deg);
+    transition:all 0.5s;
+}
+.btn-10::before{
+    background-color:#2ce771;
+    transform-origin: top;
+}
+.btn-10::after{
+    background-color:red;
+    transform-origin: bottom;
+    transition-delay:0.30s;
+}
+.btn-10:hover::before, .btn-10:hover::after{
+    transform:rotateX(0deg);
+}
