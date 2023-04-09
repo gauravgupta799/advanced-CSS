@@ -180,4 +180,23 @@ h2{
     .container-3{
         grid-template-columns:1fr;
     }  
+    .cont4-item-3{
+       /* grid-area:1/1/2/4; */
+            /* OR */
+       /* grid-area:1/1/2/span 3; */
+            /* OR */
+       grid-row:1/2;
+       /* grid-column:1/span 3; */
+            /* OR */
+        grid-column:1/-1;
+    }
+    .cont4-item-5{
+        grid-row:3/4;
+        grid-column:2/span 2;
+    }
+    .cont4-item-9{
+        grid-row:4/5;
+        grid-column:1/-1;
+        height: 60px;
+    }
 }
