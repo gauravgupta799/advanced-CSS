@@ -743,7 +743,6 @@ h2{
 /* Button-20 */
 .btn-20{
   transition:all 0.2s;
-  /* border:none; */
 }
 .btn-20:hover{
     color: #fff;
@@ -842,4 +841,45 @@ h2{
 .btn-22:hover{
     transform:translateY(-3px);
     box-shadow:0px 10pc 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button-23 */
+.btn-23{
+    border:none;
+    border:5px solid #250e74;
+    color:#4008f8;
+    font-weight: 600;
+    transition:all 0.5s;
+}
+.btn-23::before,
+.btn-23::after{
+    content:"";
+    position:absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition:all 0.5s;
+    z-index:-1;
+}
+.btn-23::before{
+    border-top:40px solid #250e74;
+    border-bottom:40px solid #250e74;
+    border-right:40px solid transparent;
+    transform:translateX(-100%);
+} 
+.btn-23:hover{
+    color:white;
+}
+.btn-23:hover::before{
+    transform:translateX(0%);
+}
+.btn-23::after{
+    border-top:40px solid #250e74;
+    border-bottom:40px solid #250e74;
+    border-left:40px solid transparent;
+    transform:translateX(100%);
+} 
+.btn-23:hover::after{
+    transform:translateX(0%);
 }
