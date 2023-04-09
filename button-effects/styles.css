@@ -538,3 +538,43 @@ h2{
 .btn-14:hover{
     color:white;
 }
+
+/* Button-15 */
+.btn-15{
+    border:none;
+    font-size:20px;
+    font-family: verdana, arial, helvetica, sans-serif;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    color:#FDC518;
+    overflow: visible;
+}
+.btn-15::before,.btn-15::after{
+    content:"";
+    position: absolute;
+    transition:all 0.4s;
+}
+.btn-15::before{
+    width: 200px;
+    height:90px;
+    top: -15px;
+    left: 0;
+    border-left:2px solid red;
+    border-right:2px solid #FDC518;
+}
+.btn-15:hover::before{
+  transform:rotateY(180deg);
+}
+.btn-15::after{
+    width: 230px;
+    height:60px;
+    top: 0;
+    left: -15px;
+    border-top:2px solid red;
+    border-bottom:2px solid #FDC518;
+    transition-delay:0.4s;
+}
+.btn-15:hover::after{
+    transform:rotateX(180deg);
+}
