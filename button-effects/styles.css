@@ -697,3 +697,45 @@ h2{
 .btn-18:hover > span::after{
     bottom: 0;
 }
+
+/* Button-19 */
+.btn-19{
+    border:4px solid #00aeff;
+    color:#00aeff;
+    transition:all 0.5s;
+}
+.btn-19:hover{
+    color:white;
+}
+.btn-19:hover .wave{
+    top: 0;
+}
+.wave{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color:#00aeff;
+    top: calc(100% + 22px);
+    transition:all 1s ;
+    z-index: -1;
+}
+.wave::before{
+    content:"";
+    position:absolute;
+    background-image: url(wave.png);
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    animation:wavy 0.5s linear infinite;
+    -webkit-animation:wavy 0.5s linear infinite;
+}
+@keyframes wavy{
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x:118px;
+    }
+}
