@@ -487,3 +487,54 @@ h2{
     left: 0;
     transform:perspective(1000px) rotateX(-75deg);
 }
+
+/* Button-14 */
+.btn-14{
+    border:5px solid #f6b93b;
+    color:#f6b93b;
+}
+.btn-14::before, .btn-14::after,
+.btn-14 > span::before, .btn-14 > span::after{
+    content:"";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #f6b93b;
+    z-index:-1;
+    transition:all 0.4s;
+}
+.btn-14::before{
+    top: 0;
+    left: -25%;
+}
+.btn-14:hover::before{
+    left: 0;
+    top: 0;
+}
+.btn-14::after{
+    top: -100%;
+    left:25%;
+}
+.btn-14:hover::after{
+    top: 0;
+    left:25%;
+}
+.btn-14 > span::before{
+    top: 100%;
+    right: 25%;
+}
+.btn-14:hover > span::before{
+    top: 0;
+    right: 25%;
+}
+.btn-14 > span::after{
+    top: 0;
+    right: -25%;
+}
+.btn-14:hover > span::after{
+    top: 0;
+    right: 0;
+}
+.btn-14:hover{
+    color:white;
+}
