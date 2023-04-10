@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS's Functions</title>
+</head>
+<body>
+    <h2>CSS's Functions</h2>
+    <h1>Simple responsive test</h1>
+    <p>
+        The clamp() function in CSS allows you to define a range of values for a property, which can be useful in situations where you want to ensure that a value falls within a certain range, but you don't want to use a fixed value or a percentage.
+
+        The clamp() function takes three parameters: a minimum value, a preferred value, and a maximum value. The function will then choose the preferred value, as long as it falls within the range defined by the minimum and maximum values. If the preferred value falls outside of this range, the function will use the minimum or maximum value instead.
+    </p>
+    <code>font-size:clamp(16px, 4vw, 24px);</code>
+    <p>
+        In this example, the font size will be set to the preferred value of 4vw, but it will never be smaller than 16px or larger than 24px. This ensures that the font size remains legible on a wide range of devices and screen sizes.
+
+        Overall, using the clamp() function in CSS can help you create more flexible and responsive designs that adapt well to different contexts and devices.
+    </p>
+    <div class="parent">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, officiis!</p>
+    </div>
+</body>
+</html>

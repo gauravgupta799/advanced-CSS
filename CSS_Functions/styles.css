@@ -1,0 +1,37 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ html{
+    font-size:16px;
+ }
+ body{
+    margin:0 auto;
+    width:min(1000px, cal(70% + 100px));
+    padding:1.5em;
+ }
+ h1{
+    letter-spacing:2px;
+    font-size:clamp(1.8rem, 2.5vw, 2.8rem);
+    /* font-size:1.8rem; */
+ }
+ p{
+    line-height:1.5;
+    font-size:max(1.2rem,1.2vw);
+    margin: 1em 0;
+ }
+ code{
+    background-color:black;
+    color:white;
+    padding:1em;
+    margin:1em 0;
+ }
+ .parent{
+    font-size:20px;
+ }
+ .parent > p{
+    font-size:1.5em;
+    font-size:2rem;
+ }
+ 
