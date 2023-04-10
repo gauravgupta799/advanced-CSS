@@ -1,0 +1,30 @@
+
+body{
+    /* background-color: #222;
+    color:white; */
+    height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    margin-left: 1rem;
+    row-gap:1rem;
+    border:1px solid black;
+    padding:1em;
+}
+.input-wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap:5px;
+}
+label{
+    font-size:1.5rem;
+    font-weight: 600;
+    letter-spacing:3px;
+}
+input{
+    height: 50px;
+    width: 50%;
+}
