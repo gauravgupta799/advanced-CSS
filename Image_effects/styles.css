@@ -181,7 +181,7 @@
     transition:all 0.35s;
 }
 .container-6:hover .heading{
-    transform:translate(0,0);
+    transform:translate(0px,0px);
 }
 .caption-6 .para{
     padding:15px;
@@ -189,7 +189,7 @@
     transition:all 0.4s;
 }
 .container-6:hover .para{
-    transform:translate(0,0);
+    transform:translate(0px,0px);
 }
 .caption-6 .btn{
    background-color:#000;
@@ -199,6 +199,61 @@
    transition:all 0.45s;
 }
 .caption-6:hover .btn{
-    transform:translateY(0);
+    transform:translateY(0px);
 }
 /* ======== Container-6 End======== */
+
+/* ======= Container-7 Start======= */
+.container-7::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 205%;
+    background:rgba(0,0,0,0.6);
+    transform: translate(650px, -100px) rotate(180deg);
+}
+.container-7:hover::before{
+    transform:translate(0, 0) rotate(0deg);
+    transition:all 0.2s;
+}
+.caption-7 .para, .heading {
+    color:black;
+    text-align: justify;
+    padding: 10px 20px;
+    color:white;
+}
+.container-7 .heading{
+    background-color:rgba(0,0,0,0.8);
+    padding:20px;
+    transform:translateY(-470px);
+    transition:all 0.2s;
+    margin-top: 30px;
+}
+.container-7:hover .heading{
+    transform:translateY(-350px);
+    transition-delay: 0.5s;
+}
+.container-7 .para{
+    transform:translateX(300px) rotate(90deg);
+    transition:all 0.2s;
+    margin-top:-105%;
+}
+.container-7:hover .para{
+    transform:translateX(0) rotate(0deg);
+    transition-delay: 0.4s;
+}
+.container-7 .btn{
+    transform:translateY(-350px);
+    transition:all 0.2s;
+    background-color:#000;
+    color:white;
+    padding:15px;
+}
+.container-7:hover .btn{
+    transform:translateY(0px);
+    transition-delay: 0.3s;
+}
+
+/* ======= Container-7 End =======  */
