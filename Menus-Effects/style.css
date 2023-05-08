@@ -17,7 +17,7 @@ body{
     list-style: none;
     /* margin: 0  1rem; */
 }
-.menu__link ,.menu__link-2{
+.menu__link ,.menu__link-2, .menu__link-3{
     text-decoration: none;
     color: #3d3d3d;
     font-size: 1.5rem;
@@ -27,6 +27,7 @@ body{
     margin:0px 10px;
     position:relative;
     text-transform:uppercase;
+    text-align: center;
 }
 
 .menu__link::before{
@@ -112,3 +113,45 @@ body{
     opacity: 1;
 }
 /* Menu-2 End */
+
+/* === Menu-3 start === */
+.menu__link-3{
+    color:#262626;
+    display: block;
+    width: 130px;
+    height: 30px;
+    position: relative;
+    transition:all 0.7s;
+    padding-top: 10px;
+}
+.menu__link-3:hover{
+    color:#ffffff;
+}
+.menu__link-3 span{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #262626;
+    z-index:-1;
+    left: 0;
+    top: 0;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: top;
+}
+.menu__link-3:hover span{
+    transform:scaleY(1);
+}
+.menu__link-3 span:nth-child(2){
+    left:25%;
+    transition-delay:0.15s;
+}
+.menu__link-3 span:nth-child(3){
+  left:50%;
+  transition-delay:0.3s;
+}
+.menu__link-3 span:nth-child(4){
+    left:75%;
+    transition-delay:0.45s;
+}
+/* === Menu-3 end === */
