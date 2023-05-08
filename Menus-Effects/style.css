@@ -17,7 +17,8 @@ body{
     list-style: none;
     /* margin: 0  1rem; */
 }
-.menu__link ,.menu__link-2, .menu__link-3{
+.menu__link ,
+.menu__link-2, .menu__link-3, .menu__link-4{
     text-decoration: none;
     color: #3d3d3d;
     font-size: 1.5rem;
@@ -155,3 +156,38 @@ body{
     transition-delay:0.45s;
 }
 /* === Menu-3 end === */
+
+/* === Menu-4 start === */
+.menu__link-4{
+    position:relative;
+    padding:2px 5px;
+}
+.menu__link-4::before{
+    content:"";
+    position:absolute;
+    width: 0;
+    height: 5px;
+    background-color: #00bcd4;
+    top: 120%;
+    left: 0;
+    transition:all 0.5s;
+}
+.menu__link-4::after{
+    content:"";
+    position:absolute;
+    width: 0;
+    height: 5px;
+    background-color: #f0f;
+    top: 120%;
+    right: 0;
+    transition:all 0.5s;
+}
+.menu__link-4:hover::before{
+    width: 50%;
+    transform:translateX(100%);
+}
+.menu__link-4:hover::after{
+    width: 50%;
+    transform:translateX(-100%);
+}
+/* === Menu-4 end === */
