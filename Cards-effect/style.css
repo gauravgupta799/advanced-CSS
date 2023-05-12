@@ -10,6 +10,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: "Raleway", Arial, sans-serif;
+    gap:1rem;
 }
 .card{
     position: relative;
@@ -73,3 +74,44 @@ body{
 .card:hover .content{
     color:#fff;
 }
+
+/* ==== Card-2 start ==== */
+.card-2{
+    position: relative;
+    width: 300px;
+    height: 280px;
+    padding:20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+    transition:0.3s;
+}
+.imgBox-2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transform:translateY(-60px);
+    transition:0.3s;
+    z-index: 1;
+}
+.imgBox-2 > img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.card-2:hover{
+    height: 450px;
+}
+.content-2{
+    text-align: center;
+    text-align: justify;
+    padding-block: 10px;
+    color:#111;
+    transition:0.3s;
+    transform:translateY(-500px);
+    opacity: 0;
+}
+.card-2:hover .content-2{
+    opacity: 1;
+    transform:translateY(-200px);
+}
+/* ==== Card-2 end ==== */
