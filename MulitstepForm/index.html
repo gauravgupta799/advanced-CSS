@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Multi Step Form</title>
+</head>
+<body>
+    <form action="" method="post" autocomplete="off">
+        <h1 class="center">Register</h1>
+        <div class="center">
+            <span class="step" id="step-1"></span>
+            <span class="step" id="step-2"></span>
+            <span class="step" id="step-3"></span>
+            <span class="step" id="step-4"></span>
+        </div>
+
+        <div class="tab" id="tab-1">
+            <p>Name:</p>
+            <input type="text" placeholder="First Name" name="firstname">
+            <input type="text" placeholder="Last Name" name="lasttname">
+            <div class="index-btn-wrapper">
+                <div class="index-btn">Next</div>
+            </div>
+        </div>
+
+        <div class="tab" id="tab-2">
+            <p>Contact Info:</p>
+            <input type="email" placeholder="Email" name="firstname">
+            <input type="text" placeholder="Phone" name="Phone">
+            <div class="index-btn-wrapper">
+                <div class="index-btn">Previous</div>
+                <div class="index-btn">Next</div>
+            </div>
+        </div>
+        <div class="tab" id="tab-3">
+            <p>Birthday:</p>
+            <input type="text" placeholder="dd" name="dd">
+            <input type="text" placeholder="mm" name="mm">
+            <input type="text" placeholder="dd" name="dd">
+            <input type="text" placeholder="Phone" name="Phone">
+            <div class="index-btn-wrapper">
+                <div class="index-btn">Previous</div>
+                <div class="index-btn">Next</div>
+            </div>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
