@@ -252,3 +252,77 @@ body{
 }
 
 /* Card-4 style end */
+
+/* Card-5 Style Start */
+.card-5{
+    position: relative;
+    cursor: pointer;
+    width: 300px;
+}
+.card-5__face-1{
+    position: relative;
+    width: inherit;
+    height: 200px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(100px);
+    z-index: 1;
+}
+.card-5__title{
+    text-align: center;
+    margin-top: 10px;
+}
+.card-5:hover .card-5__face-1{
+    background-color: #ff0057;
+  
+    transform: translateY(0);
+}
+.card-5__face-2{
+    position: relative;
+    width: inherit;
+    height: 200px;
+    background:#013d4a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.2em;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+    transform: translateY(-100px);
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+.card-5:hover .card-5__face-2{
+    transform: translateY(0);
+}
+.card-5__link-btn{
+    font-size:16px;
+    padding: 0.2em 0.8em;
+    text-decoration: none;
+    border:1.4px solid #fff;
+    color: #fff;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.card-5__link-btn:hover{
+    background-color: #fff;
+    color: #013d4a;
+}
+.img-box{
+    opacity: 0.4;
+    transition:0.5s;
+}
+.card-5:hover .img-box{
+    opacity: 1;
+}
+
+/* Card-5 Style End */
