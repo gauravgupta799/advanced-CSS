@@ -21,7 +21,7 @@ prev.addEventListener('click',()=>{
 })
 
 
-function  upadate(){
+function upadate(){
     circles.forEach((circle,i)=>{
         if(i < currentIndex){
             circle.classList.add("active")
