@@ -42,3 +42,28 @@ body{
 .smoky-list-item:nth-child(5){
     transition-delay:1.6s;
 }
+
+/* Fill Text effect */
+.title{
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    font-size: 120px;
+    color:#ccc;
+    text-transform: uppercase;
+    position: relative;
+}
+.title::before{
+    content:"Gaurav";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    color:crimson;
+    overflow: hidden;
+    transition:all 0.8s;
+}
+
+.title:hover::before{
+    width: 100%;
+}
