@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+.cs-title{
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 15px;
+    text-shadow:0 1px 0 #3acd09, 0 2px 0 #07e303, 0 3px 0 #09e70d, 0 4px 0 #2dd407, 0 30px 5px rgba(38, 245, 1, 0);
+    animation:float-text 3s linear infinite;
+    -webkit-animation:float-text 3s linear infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes float-text {
+    from{
+        transform:rotate(5deg);
+    }
+    to{
+        transform:rotate(-5deg);
+    }
+}
