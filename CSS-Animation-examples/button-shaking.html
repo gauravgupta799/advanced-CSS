@@ -3,49 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="btn-styles.css">
     <title>Button Shaking Effect</title>
-    <style>
-        body{
-            height: 100vh;
-            background: #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .btn{
-            text-decoration: none;
-            border:3px solid white;
-            font-size: 40px;
-            color: white;
-            padding: 40px 80px;
-            font-family: sans-serif;
-            transition: all 0.4s;
-            animation:shake 0.5s linear 1;
-        }
-        .btn:hover{
-            border-color: #F44336;
-            color: #F44336;
-            animation:shake 0.5s linear 1;
-        }
-
-        @keyframes shake{
-            33%{
-                transform: rotate(10deg);
-            }
-            66%{
-                transform: rotate(-10deg);
-            }
-            100%{
-                transform: rotate(10deg);
-            }
-        }
-
-    </style>
 </head>
 <body>
     <div class="container">
         <a href="#" class="btn">Hover Me</a>
     </div>
+  
+    <a class="btn-2">Hover Me</a>
     
 </body>
 </html>
