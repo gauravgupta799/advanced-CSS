@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="style.css">
+    <title>Lighting text Animation</title>
+
+    <style>
+        body{
+            height: 100vh;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text__list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .text__list li{
+            list-style: none;
+            color:#484848;
+            font-size: 100px;
+            letter-spacing:15px;
+            animation:lighting 1.4s linear infinite;
+            font-weight: 900;
+        }
+        .text__list::before{
+            
+        }
+        @keyframes lighting{
+            0%{
+                color:#484848;
+                text-shadow:none;
+            }
+            90%{
+                color:#484848;
+                text-shadow:none;
+            }
+            100%{
+                color:#fff900;
+                text-shadow:0 0 7px #fff900, 0 0 50px #ff6c00;
+            }
+        }
+        li:nth-child(1){
+            animation-delay:0s;
+        }
+        li:nth-child(2){
+            animation-delay:0.1s;
+        }
+        li:nth-child(3){
+            animation-delay:0.2s;
+        }
+        li:nth-child(4){
+            animation-delay:0.3s;
+        }
+        li:nth-child(5){
+            animation-delay:0.4s;
+        }
+        li:nth-child(6){
+            animation-delay:0.5s;
+        }
+    </style>
+</head>
+<body>
+    <ul class="text__list">
+        <li>G</li>
+        <li>A</li>
+        <li>U</li>
+        <li>R</li>
+        <li>A</li>
+        <li>V</li>
+    </ul>
+</body>
+</html>
