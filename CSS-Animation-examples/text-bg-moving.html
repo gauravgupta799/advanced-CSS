@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Background Animation</title>
+
+    <style>
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background: url("./TextBg.jpg"); */
+            /* background-position:center; */
+            /* background-repeat:no-repeat; */
+            /* background-size: cover; */
+            /* color:white; */
+            background-color: #055a2d;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 160px;
+            background-image: url("./textBg.png");
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip:text;
+            animation:textbackground 20s linear infinite;
+        }
+
+        @keyframes textbackground{
+            from{
+                background-position:0 0;
+            }
+            to{
+                background-position: 100% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Gaurav Gupta</h1>
+</body>
+</html>
