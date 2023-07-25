@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulse Effect</title>
+    <script src="https://kit.fontawesome.com/39784cd2b5.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #212121;
+        }
+        .pulse{
+            width: 100px;
+            height: 100px;
+            background: #58ea00;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 48px;
+            position: relative;
+        }
+        .pulse::before,
+        .pulse::after{
+            content: "";
+            position: absolute;
+            inset:-20px;
+            border:1px solid #58ea00;
+            border-radius: 50%;
+            animation:pulsing 1.5s linear infinite;
+        }
+
+        .pulse::after{
+            animation-delay: 0.5s;
+        }
+
+        @keyframes pulsing{
+            0%{
+                transform:scale(0.5);
+                opacity: 0;
+            }
+            50%{
+                transform:scale(1);
+                opacity: 1;
+            }
+            100%{
+                transform:scale(1.2);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pulse">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
+</body>
+</html>
