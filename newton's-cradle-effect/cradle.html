@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton's Cradle Effect</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;height: 100vh;
+            background-color: rgb(34, 64, 95);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            color:white;
+            text-align: center;
+            font-size: 42px;
+            font-family: sans-serif;
+            text-decoration: underline;
+        }
+        .cradle{
+            display: flex;
+            border-top: 10px solid white;
+        }
+        .cradle span{
+            display: block;
+            height: 300px;
+            width: 3px;
+            background-color: white;
+            margin:0px 29px;
+            position: relative;
+            transform-origin: top;
+        }
+        .cradle span::before{
+            content:"";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 50%;
+            transform:translateX(-50%);
+        }
+
+        .cradle span:first-child{
+            animation:left-arm 3s ease-in infinite;
+        }
+        .cradle span:last-child{
+            animation:right-arm 3s ease-in infinite;
+            animation-delay: 1.5s;
+        }
+        @keyframes left-arm{
+            0%{ transform:rotate(0deg);}
+            25%{ transform:rotate(60deg);}
+            50%{ transform:rotate(0deg);}
+            100%{ transform:rotate(0deg);}
+        }
+        @keyframes right-arm{
+            0%{ transform:rotate(0deg);}
+            25%{ transform:rotate(-60deg);}
+            50%{ transform:rotate(0deg);}
+            100%{ transform:rotate(0deg);}
+        }
+    </style>
+</head>
+<body>
+        <h1>Newton's Cradle Effect</h1>
+    <div class="cradle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+</body>
+</html>
