@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Loader</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #222D3E;
+        }
+        .loader{
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .outer,.middle, .inner, .dot{
+            position: absolute;
+            border-radius:50%;
+            inset:0;
+        }
+        .outer,.middle, .inner{
+            animation:rotate 1s linear infinite;
+            border-top:5px solid transparent;
+            border-bottom:5px solid transparent;
+        }
+        .outer{
+            border-left:5px solid red;
+            border-right:5px solid red;
+        }
+        .middle{
+            inset:30px;
+            border-left:5px solid green;
+            border-right:5px solid green;
+            animation:rotate 1s linear infinite reverse;
+        }
+        .inner{
+            inset:60px;
+            border-left:5px solid yellow;
+            border-right:5px solid yellow;
+        }
+        .dot{
+            inset:90px;
+            background: white;;
+        }
+
+        @keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div class="outer"></div>
+        <div class="middle"></div>
+        <div class="inner"></div>
+        <div class="dot"></div>
+    </div>
+</body>
+</html>
