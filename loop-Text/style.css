@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1E1C27;
+    color: white;
+}
+h1{
+    font-size: 3em;
+}
+
+.span-container{
+    position: relative;
+    display: inline-block;
+    color:#FF3C41;
+    height: 1.25em;
+    vertical-align: bottom;
+    overflow: hidden;
+}
+.span-title{
+    display: block;
+    animation:animateWords 5s infinite ease;
+    -webkit-animation:animateWords 5s infinite ease;
+}
+
+@keyframes animateWords{
+    0%{
+        transform:translateY(0%);
+    }
+    25%{
+        transform:translateY(-100%);
+    }
+    50%{
+        transform:translateY(-200%);
+    }
+    75%{
+        transform:translateY(-300%);
+    }
+    100%{
+        transform:translateY(-400%);
+    }
+}
