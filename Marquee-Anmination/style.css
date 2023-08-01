@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    /* background: rgb(37, 87, 37); */
+}
+h1{
+    font-size: 48px;
+    text-transform: uppercase;
+    color:blue;
+    padding: 0 2rem;
+    letter-spacing: 1px;
+    white-space:nowrap;
+    animation:move-text 6s linear infinite ;
+    -webkit-animation:move-text 6s linear infinite ;
+}
+
+@keyframes move-text{
+    0%{
+        transform:translateX(-100%);
+        -webkit-transform:translateX(-100%);
+        -moz-transform:translateX(-100%);
+        -ms-transform:translateX(-100%);
+        -o-transform:translateX(-100%);
+}
+    100%{
+        transform:translateX(0%);
+        -webkit-transform:translateX(0%);
+        -moz-transform:translateX(0%);
+        -ms-transform:translateX(0%);
+        -o-transform:translateX(0%);
+}
+}
